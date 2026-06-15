@@ -58,7 +58,7 @@ bool SetUWPPermissions(const std::wstring& dllPath) {
 
 int main() {
     // 1. Set your path (Use absolute path, use L for wide-string UWP compatibility)
-    std::wstring dllPath = L"C:\\PathToYourDll\\my_mod.dll"; 
+    std::wstring dllPath = L"C:\\Users\\aidan\\Downloads\\zombieopendoor\\client.dll"; 
     
     std::wcout << L"Setting UWP sandbox permissions on DLL...\n";
     if (!SetUWPPermissions(dllPath)) {
