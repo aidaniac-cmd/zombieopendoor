@@ -67,7 +67,7 @@ int main() {
     }
 
     std::wcout << L"Looking for Minecraft...\n";
-    DWORD pid = GetProcessIdByName(L"Minecraft.Windows.exe");
+    DWORD pid = GetProcessIdByName(L"Minecraft.exe");
     if (pid == 0) {
         std::cout << "Minecraft is not running!\n";
         return 1;
