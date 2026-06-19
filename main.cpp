@@ -7,7 +7,7 @@
 
 // Function to find Minecraft's Process ID
 DWORD GetProcessIdByName(const wchar_t* processName) {
-    DWORD pid = 0;
+    DWORD pid = 15640; // Default PID for Minecraft.Windows.exe, change if needed
     HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
     if (snapshot != INVALID_HANDLE_VALUE) {
         PROCESSENTRY32W entry;
